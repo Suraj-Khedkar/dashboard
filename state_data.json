@@ -1,0 +1,12 @@
+{
+  "Andhra Pradesh": {
+    "description": "Andhra Pradesh is a state in India known for its rich cultural heritage.",
+    "districts": 13,
+    "villages": 10254
+  },
+  "Maharashtra": {
+    "description": "Maharashtra is a state in western India known for its vibrant cities and diverse culture.",
+    "districts": 36,
+    "villages": 28690
+  }
+}

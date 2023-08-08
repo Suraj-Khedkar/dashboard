@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #023047;
+    color: white;
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info{
+  width: 50%;
+  margin-left: 60px;
+  border: 2px solid black;
+}
+
+.national{
+
+    font-weight: 600;
+    color: #fb8500;
+}
+.content{
+   font-size: 13px;
+}
+
+.content-info{
+
+    color: #ffb703;
+    font-size: 15px;
+
+}
+
+.current-place{
+
+     color: #fb8500;
+
+
+}
+
+.map{
+   border: 1px solid blueviolet;
+}
+.map svg{
+  
+    width: 500px;
+    height: 500px;
+    margin-right: 90px; ;
+    stroke: black;
+    stroke-opacity: 5;
+    border: 1px solid brown;
+}
+
+.map svg path{
+    
+    transition: 0.5s;
+    fill : rgba(223, 220, 197, 0.952);
+}
+
+.map svg path:hover{
+
+    fill: #138808;
+
+}
+.highlight {
+    color: black;
+  }
+.blur {
+    filter: blur(1px);
+    border: 5px solid black;
+}
+.hover-details {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    pointer-events: none;
+    border-radius: 10px;
+    display: none;
+  }
