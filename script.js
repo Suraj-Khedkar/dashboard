@@ -1,7 +1,9 @@
 const svgElement = document.getElementById("mySvg");
-let currentPlace = document.querySelector(".current-place");
-let allPath = document.querySelectorAll(".map path");
+const currentPlace = document.querySelector(".current-place");
+const allPath = document.querySelectorAll(".map path");
 const hoverDetails = document.querySelector(".hover-details");
+const resetButton = document.getElementById("resetButton");
+
 async function fetchStateData(statecode) {
     try {
         const response = await fetch("state_data.json");
@@ -13,27 +15,36 @@ async function fetchStateData(statecode) {
     }
 }
 allPath.forEach(element => {
+    document.addEventListener("DOMContentLoaded", async function(){
+        const currentState = element.getAttribute("title");
+        const stateInfo = await fetchStateData(currentState);
+        const {color} = stateInfo || {color : "black"};
+        element.style.fill = color;
+    });
+    
     element.addEventListener("mouseenter", async function(event) {
-      const currentState= element.getAttribute("title");
-      currentPlace.innerText = currentState;
-      const mouseX = event.clientX;
-      const mouseY = event.clientY;
+        const currentState = element.getAttribute("title");
+        currentPlace.innerText = currentState;
+        const stateInfo = await fetchStateData(currentState);
+        const { districts, villages } = stateInfo || { districts: "N/A", villages: "N/A" };
+        hoverDetails.innerText = currentState + "\nDistricts: " + districts + "\nVillages: " + villages;
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
 
-      hoverDetails.style.display = "block";
-      hoverDetails.style.left = `${mouseX + 10}px`;
-      hoverDetails.style.top = `${mouseY + 10}px`;
-
-      const stateInfo = await fetchStateData(currentState);
-      const { districts, villages } = stateInfo || { districts: "N/A", villages: "N/A" };
-      hoverDetails.innerText = currentState + "\nDistricts: " + districts + "\nVillages: " + villages;
+        hoverDetails.style.display = "block";
+        hoverDetails.style.left = `${mouseX + 10}px`;
+        hoverDetails.style.top = `${mouseY + 10}px`;
     });
-
+    
     element.addEventListener("mouseleave", function() {
-      hoverDetails.style.display = "none";
+        hoverDetails.style.display = "none";
     });
-  });
-  
+});
+
+
+const originalViewBox = svgElement.getAttribute("viewBox");
 svgElement.addEventListener("click", function(event) {
+    svgElement.style.pointerEvents  = "none";
     const bbox = event.target.getBBox();
     console.log(event.target);
     const viewBoxX = bbox.x - 10; 
@@ -44,8 +55,7 @@ svgElement.addEventListener("click", function(event) {
     svgElement.setAttribute("viewBox", `${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`);
 });
 
-const resetButton = document.getElementById("resetButton");
-let originalViewBox = svgElement.getAttribute("viewBox");
 resetButton.addEventListener("click", function() {
+    svgElement.style.pointerEvents  = "auto";
     svgElement.setAttribute("viewBox", originalViewBox);
   });

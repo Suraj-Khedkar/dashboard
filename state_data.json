@@ -1,12 +1,224 @@
 {
+  "Andaman and Nicobar": {
+    "description": "Andaman and Nicobar Islands is a union territory known for its stunning beaches and marine diversity.",
+    "color": "blue",
+    "districts": 3,
+    "villages": 58
+  },
   "Andhra Pradesh": {
     "description": "Andhra Pradesh is a state in India known for its rich cultural heritage.",
+    "color": "orange",
     "districts": 13,
     "villages": 10254
   },
+  "Arunachal Pradesh": {
+    "description": "Arunachal Pradesh is a state known for its remote landscapes, biodiversity, and indigenous tribes.",
+    "color": "green",
+    "districts": 25,
+    "villages": 5255
+  },
+  "Assam": {
+    "description": "Assam is a state known for its tea plantations, wildlife, and distinct cultures.",
+    "color": "green",
+    "districts": 34,
+    "villages": 25891
+  },
+  "Bihar": {
+    "description": "Bihar is a state known for its historical significance, cultural heritage, and temples.",
+    "color": "brown",
+    "districts": 38,
+    "villages": 45115
+  },
+  "Chandigarh": {
+    "description": "Chandigarh is a union territory known for its modern architecture, urban design, and cleanliness.",
+    "color": "purple",
+    "districts": 1,
+    "villages": 0
+  },
+  "Chhattisgarh": {
+    "description": "Chhattisgarh is a state known for its ancient temples, tribal cultures, and natural beauty.",
+    "color": "green",
+    "districts": 28,
+    "villages": 20533
+  },
+  "Daman and Diu": {
+    "description": "Dadra and Nagar Haveli and Daman and Diu is a union territory known for its scenic beauty and historic forts.",
+    "color": "blue",
+    "districts": 3,
+    "villages": 70
+  },
+  "Delhi": {
+    "description": "Delhi is a union territory and the capital of India, known for its historic landmarks and diverse culture.",
+    "color": "purple",
+    "districts": 11,
+    "villages": 0
+  },
+  "Goa": {
+    "description": "Goa is a state known for its beautiful beaches, vibrant nightlife, and Portuguese heritage.",
+    "color": "purple",
+    "districts": 2,
+    "villages": 191
+  },
+  "Gujarat": {
+    "description": "Gujarat is a state known for its rich industrial heritage, archaeological sites, and diverse culture.",
+    "color": "orange",
+    "districts": 33,
+    "villages": 18615
+  },
+  "Haryana": {
+    "description": "Haryana is a state known for its agricultural importance, ancient sites, and modern infrastructure.",
+    "color": "green",
+    "districts": 22,
+    "villages": 6734
+  },
+  "Himachal Pradesh": {
+    "description": "Himachal Pradesh is a state known for its hill stations, trekking destinations, and serene landscapes.",
+    "color": "green",
+    "districts": 12,
+    "villages": 3229
+  },
+  "Jammu and Kashmir": {
+    "description": "Jammu and Kashmir is a union territory known for its breathtaking valleys, lakes, and diverse cultures.",
+    "color": "blue",
+    "districts": 20,
+    "villages": 6293
+  },
+  "Jharkhand": {
+    "description": "Jharkhand is a state known for its mineral resources, waterfalls, and tribal communities.",
+    "color": "green",
+    "districts": 24,
+    "villages": 32105
+  },
+  "Karnataka": {
+    "description": "Karnataka is a state known for its technological hubs, ancient ruins, and diverse geography.",
+    "color": "orange",
+    "districts": 30,
+    "villages": 29483
+  },
+  "Kerala": {
+    "description": "Kerala is a state known for its backwaters, lush greenery, and high literacy rate.",
+    "color": "green",
+    "districts": 14,
+    "villages": 19732
+  },
+  "Ladakh": {
+    "description": "Ladakh is a union territory known for its mesmerizing landscapes, monasteries, and unique culture.",
+    "color": "blue",
+    "districts": 2,
+    "villages": 134
+  },
+  "Lakshadweep": {
+    "description": "Lakshadweep is a union territory known for its stunning coral reefs, clear waters, and sandy beaches.",
+    "color": "blue",
+    "districts": 1,
+    "villages": 10
+  },
+  "Madhya Pradesh": {
+    "description": "Madhya Pradesh is a state known for its ancient temples, wildlife sanctuaries, and historical sites.",
+    "color": "orange",
+    "districts": 52,
+    "villages": 54404
+  },
   "Maharashtra": {
     "description": "Maharashtra is a state in western India known for its vibrant cities and diverse culture.",
+    "color": "blue",
     "districts": 36,
     "villages": 28690
+  },
+  "Manipur": {
+    "description": "Manipur is a state known for its natural beauty, classical dance, and historical sites.",
+    "color": "green",
+    "districts": 16,
+    "villages": 2398
+  },
+  "Meghalaya": {
+    "description": "Meghalaya is a state known for its lush rainforests, living root bridges, and indigenous culture.",
+    "color": "green",
+    "districts": 11,
+    "villages": 6177
+  },
+  "Mizoram": {
+    "description": "Mizoram is a state known for its bamboo forests, vibrant festivals, and distinct cultural heritage.",
+    "color": "green",
+    "districts": 11,
+    "villages": 851
+  },
+  "Nagaland": {
+    "description": "Nagaland is a state known for its vibrant tribes, scenic landscapes, and traditional arts.",
+    "color": "green",
+    "districts": 11,
+    "villages": 1479
+  },
+  "Odisha": {
+    "description": "Odisha is a state known for its ancient temples, tribal cultures, and beautiful coastline.",
+    "color": "green",
+    "districts": 30,
+    "villages": 51793
+  },
+  "Puducherry": {
+    "description": "Puducherry is a union territory known for its French influence, beaches, and spiritual atmosphere.",
+    "color": "purple",
+    "districts": 4,
+    "villages": 98
+  },
+  "Punjab": {
+    "description": "Punjab is a state known for its fertile lands, religious diversity, and lively culture.",
+    "color": "orange",
+    "districts": 22,
+    "villages": 12808
+  },
+  "Rajasthan": {
+    "description": "Rajasthan is a state known for its deserts, forts, and colorful culture.",
+    "color": "orange",
+    "districts": 33,
+    "villages": 44168
+  },
+  "Sikkim": {
+    "description": "Sikkim is a state known for its biodiversity, high mountains, and Buddhist monasteries.",
+    "color": "green",
+    "districts": 4,
+    "villages": 716
+  },
+  "Tamil Nadu": {
+    "description": "Tamil Nadu is a state known for its classical art, temples, and rich history.",
+    "color": "blue",
+    "districts": 38,
+    "villages": 16509
+  },
+  "Telangana": {
+    "description": "Telangana is a state known for its IT industry, historical sites, and diverse culture.",
+    "color": "green",
+    "districts": 33,
+    "villages": 10724
+  },
+  "Tripura": {
+    "description": "Tripura is a state known for its archaeological sites, diverse tribes, and natural beauty.",
+    "color": "purple",
+    "districts": 8,
+    "villages": 854
+  },
+  "Uttar Pradesh": {
+    "description": "Uttar Pradesh is a state known for its historical significance, diverse traditions, and iconic monuments.",
+    "color": "blue",
+    "districts": 75,
+    "villages": 98354
+  },
+  "Uttaranchal": {
+    "description": "Uttarakhand is a state known for its holy rivers, trekking destinations, and natural beauty.",
+    "color": "green",
+    "districts": 13,
+    "villages": 16122
+  },
+  "West Bengal": {
+    "description": "West Bengal is a state known for its art, literature, cultural festivals, and historic landmarks.",
+    "color": "purple",
+    "districts": 23,
+    "villages": 40779
+  },
+  "Orissa": {
+    "description": "Odisha is a state known for its rich cultural heritage, ancient temples, and diverse art forms.",
+    "color": "green",
+    "districts": 30,
+    "villages": 51891
   }
 }
