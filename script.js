@@ -14,6 +14,7 @@ async function fetchStateData(statecode) {
         return null;
     }
 }
+const originalViewBox = svgElement.getAttribute("viewBox");
 allPath.forEach(element => {
     document.addEventListener("DOMContentLoaded", async function(){
         const currentState = element.getAttribute("title");
@@ -39,20 +40,17 @@ allPath.forEach(element => {
     element.addEventListener("mouseleave", function() {
         hoverDetails.style.display = "none";
     });
-});
-
-
-const originalViewBox = svgElement.getAttribute("viewBox");
-svgElement.addEventListener("click", function(event) {
-    svgElement.style.pointerEvents  = "none";
-    const bbox = event.target.getBBox();
-    console.log(event.target);
-    const viewBoxX = bbox.x - 10; 
-    const viewBoxY = bbox.y - 10; 
-    const viewBoxWidth = bbox.width + 20; 
-    const viewBoxHeight = bbox.height + 20;
-
-    svgElement.setAttribute("viewBox", `${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`);
+    element.addEventListener("click", function(event) {
+        svgElement.style.pointerEvents  = "none";
+        const bbox = event.target.getBBox();
+        console.log(event.target);
+        const viewBoxX = bbox.x - 10; 
+        const viewBoxY = bbox.y - 10; 
+        const viewBoxWidth = bbox.width + 20; 
+        const viewBoxHeight = bbox.height + 20;
+    
+        svgElement.setAttribute("viewBox", `${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`);
+    });
 });
 
 resetButton.addEventListener("click", function() {
