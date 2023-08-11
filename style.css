@@ -18,22 +18,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.map{
+    position: relative;
 }
 
+#resetButton{
+    position: absolute;
+    top: 0;;
+    bottom: 100%;
+    left: 0;
+    right: 100%;
+    text-align: center;
+    padding: 10px;
+}
 .info{
   width: 50%;
   margin-left: 60px;
   border: 2px solid black;
-}
-
-.national{
-
-    font-weight: 600;
-    color: #fb8500;
-}
-.content{
-   font-size: 13px;
 }
 
 .content-info{
@@ -48,10 +50,6 @@ body{
      color: #fb8500;
 
 
-}
-
-.map{
-   border: 1px solid blueviolet;
 }
 .map svg{
   
@@ -75,11 +73,7 @@ body{
 
     /* fill: #138808; */
     stroke: greenyellow;
-    stroke-width: 4;
-}
-.blur {
-    filter: blur(1px);
-    border: 5px solid black;
+    stroke-width: 2 !important;
 }
 .hover-details {
     position: absolute;

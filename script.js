@@ -48,12 +48,15 @@ allPath.forEach(element => {
         const viewBoxY = bbox.y - 10; 
         const viewBoxWidth = bbox.width + 20; 
         const viewBoxHeight = bbox.height + 20;
+        element.style.strokeWidth = 1;
     
         svgElement.setAttribute("viewBox", `${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`);
     });
+    resetButton.addEventListener("click", function() {
+        svgElement.style.pointerEvents  = "auto";
+        element.style.strokeWidth = 0;
+        svgElement.setAttribute("viewBox", originalViewBox);
+      });
 });
 
-resetButton.addEventListener("click", function() {
-    svgElement.style.pointerEvents  = "auto";
-    svgElement.setAttribute("viewBox", originalViewBox);
-  });
+
